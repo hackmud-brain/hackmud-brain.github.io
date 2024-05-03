@@ -39,10 +39,10 @@ cards are either just a rank, or rank + suit. Currently buggy with modifiers, ne
 ###TO AUTOMATE BINMAT
 
 On defense:
-binmat.c{autobrain:"scriptname"} to register a script as your defense
+binmat.c\{autobrain:"scriptname"} to register a script as your defense
 
 On offense, after a binmat session has started (can be done by initial attacker too!)
-binmat.c{target:"loc",trace:"numbers",brain:"scriptname"}
+binmat.c\{target:"loc",trace:"numbers",brain:"scriptname"}
 
 The trace argument is used to set joining the attackers or defenders and these are always fixed
 
@@ -51,7 +51,7 @@ Defender: “100101111”
 
 These appear to be the two most common. After coming back to this later, I’m 99.99% sure that there are only two of these
 
-Brains should use #ns.binmat.x({op:"move"}) to make turns. Game state is in args.
+Brains should use #ns.binmat.x(\{op:"move"}) to make turns. Game state is in args.
 
 ### BINMAT GAME STATE DOCUMENTATION
 
@@ -66,19 +66,19 @@ Args.s contains the state of the game
 
 Args.s.a - attacker deck
 Args.s.xa - attacker discard
-Args.s.ha<num> - attacker hand, goes from 0 to F (numbers 10+ are hex) but probably skips players that aren’t joined, ie they are undefined. As an example, Args.s.ha0 is the 0th connected players hand
-Args.s.hd<num> - defender hand, see attacker hand
-Args.s.x<num> - lane discard, num goes from 0 to 5 inclusive
-Args.s.l<num> - lane deck, num goes from 0 to 5 inclusive
-Args.s.d<num> - defender stack, num goes from 0 to 5 inclusive
-Args.s.a<num> - attacker stack, num goes from 0 to 5 inclusive
+Args.s.ha\<num> - attacker hand, goes from 0 to F (numbers 10+ are hex) but probably skips players that aren’t joined, ie they are undefined. As an example, Args.s.ha0 is the 0th connected players hand
+Args.s.hd\<num> - defender hand, see attacker hand
+Args.s.x\<num> - lane discard, num goes from 0 to 5 inclusive
+Args.s.l\<num> - lane deck, num goes from 0 to 5 inclusive
+Args.s.d\<num> - defender stack, num goes from 0 to 5 inclusive
+Args.s.a\<num> - attacker stack, num goes from 0 to 5 inclusive
 Args.s.ord - appears to specify which number you are in the turn resolution order at the end of a turn
 Args.s.turns - current turn as a number
 
 There is no one format that these cards are presented in unfortunately. Here’s a list that is believed to be complete - only the format of the cards is a complete list, where specifically they are used is incomplete
 
-{c:num, t:”?#”}, where c is number of cards and t is the top card
-{c:num, t:”X”}, where the top card is unknown
+\{c:num, t:”?#”}, where c is number of cards and t is the top card
+\{c:num, t:”X”}, where the top card is unknown
 [“X”, “X”, “X”] - 3 unknown cards
 hd0:25 - used for player hands if you do not know the real cards, eg hd0:25 if you are an attacker, or for face down stacks where you don’t have info
 Undefined - sometimes empty stacks/etc are simply undefined, such as non present player hands, discard piles, and lane decks, eg args.s.x1 may simply not exist
@@ -104,7 +104,7 @@ Examples:
 "ha0":6
 "xa":["?#","8!","@&","8^","5&","?%","7^","9+","8&"] - totally public
 "x3":["6+u"]
-"a":{"c":6,"t":"X"}, - for attacker as well
+"a":\{"c":6,"t":"X"}, - for attacker as well
     
 
 ### Lore
