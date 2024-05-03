@@ -2,19 +2,19 @@
 import pluginContentDocsWrapper from "./src/plugins/pluginContentDocsWrapper.ts";
 import autocolorPlugin from "./src/plugins/rehype/autocolor.js";
 
-const GITHUB_ORG = "comcode-org";
-const GITHUB_PROJECT = "hackmud_wiki";
+const GITHUB_ORG = "hackmud-brain";
+const GITHUB_PROJECT = "hackmud-brain.github.io";
 
 // See: https://docusaurus.io/docs/api/docusaurus-config
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   // Metadata
-  title: "hackmud Wiki",
-  tagline: "Knowledge repository for the video game hackmud",
+  title: "hackmud spoiler Wiki",
+  tagline: "Specialized and esotetic knowledge repository for the video game hackmud",
   favicon: "favicon.ico",
 
   // Deployment details
-  url: `https://wiki.hackmud.com`,
+  url: `https://hackmud-brain.github.io/`,
   baseUrl: `/`,
 
   // GitHub Pages config for CLI deployment
@@ -78,93 +78,8 @@ const config = {
       },
     },
     navbar: {
-      title: "hackmud Wiki",
-      items: [
-        {
-          type: "dropdown",
-          label: "Upgrades",
-          items: [
-            {
-              type: "docSidebar",
-              sidebarId: "lockSidebar",
-            },
-            {
-              type: "docSidebar",
-              sidebarId: "upgradeArchitectSidebar",
-            },
-            {
-              type: "docSidebar",
-              sidebarId: "upgradeInfiltratorSidebar",
-            },
-            {
-              type: "docSidebar",
-              sidebarId: "upgradeScavengerSidebar",
-            },
-            {
-              type: "docSidebar",
-              sidebarId: "upgradeExecutiveSidebar",
-            },
-            {
-              type: "docSidebar",
-              sidebarId: "upgradeOtherSidebar",
-            },
-          ],
-        },
-        {
-          type: "dropdown",
-          label: "Lore",
-          items: [
-            {
-              type: "docSidebar",
-              sidebarId: "characterSidebar",
-            },
-            {
-              type: "docSidebar",
-              sidebarId: "eventSidebar",
-            },
-          ],
-        },
-        {
-          type: "dropdown",
-          label: "Scripting",
-          items: [
-            {
-              type: "docSidebar",
-              sidebarId: "scriptsLibSidebar",
-            },
-            {
-              type: "docSidebar",
-              sidebarId: "trustScriptsSidebar",
-            },
-            {
-              type: "docSidebar",
-              sidebarId: "databaseSidebar",
-            },
-            {
-              type: "docSidebar",
-              sidebarId: "directivesSidebar",
-            },
-            {
-              type: "docSidebar",
-              sidebarId: "syntaxSidebar",
-            },
-          ],
-        },
-        {
-          type: "dropdown",
-          label: "Guides",
-          items: [
-            {
-              type: "docSidebar",
-              sidebarId: "newPlayersSidebar",
-            },
-            {
-              type: "docSidebar",
-              sidebarId: "advancedSidebar",
-            },
-          ],
-        },
-      ],
+      title: "hackmud spoilers Wiki",
+      items: [],
     },
     footer: {
       copyright:
