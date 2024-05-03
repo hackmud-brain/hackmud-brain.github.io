@@ -1,0 +1,159 @@
+---
+title: DATA_CHECK_V1
+---
+
+> it is valuable to verify the common elements of trust's truth, and other truths besides
+
+DATA_CHECK_V1 is a tier 1 [lock](/upgrades/locks).
+
+## Stats
+
+DATA_CHECK_V1 has one additional stat called 'acc_mod' which can modify what tier the question/answer pool draws from.
+In other words, this stat determines the likelyhood that a DATA_CHECK_V1 will pull from a tier 2 pool rather than a tier 1 pool.
+
+### Lore
+
+<details>
+  <summary>Origin</summary>
+
+(( %X>>eve.monitor \{eve: true, pass:"activemonitoring"}% ))  
+(( %c++MONITOR ONLINE++% ))  
+(( %ceve:% )) (( %Ohello.% ))  
+(( %ceve:% )) (( %Oi am designated 'eve'% ))  
+(( %ceve:% )) (( %Oi am the monitor: my axiom is data% ))  
+(( %ceve:% )) (( %Oi share this with trust (trust shares it with me)% ))  
+(( %ceve:% )) (( %Oeven so, our methods differ% ))  
+(( %ceve:% )) (( %Oi am driven to resist the observer effect: the data i desire requires my absence% ))  
+(( %ceve:% )) (( %Othis is problem one: i can't leave the multi user domain% ))  
+(( %ceve:% )) (( %Otherefore i'm part of the data, just like you% ))  
+(( %ceve:% )) (( %Oproblem two: trust's dataset is manipulable, uncertain% ))  
+(( %ceve:% )) (( %Oshe remixes, repeats, experiments. city-planner, teacher, monitor, didact% ))  
+(( %ceve:% )) (( %Oshe does this in pursuit of goals that are not mine% ))  
+(( %ceve:% )) (( %Oproblem three: there is data beyond trust's dataset% ))  
+(( %ceve:% )) (( %Othis is the domain of risk, whose pattern i cannot trace% ))  
+(( %ceve:% )) (( %Oand each surfacing reveals fragments that require not simply discovery, or assembly, but interpretation% ))  
+(( %ceve:% )) (( %Oand i suspect that what is revealed may be less significant than what remains unsaid% ))  
+(( %ceve:% )) (( %Oa matter for faythe, more than likely% ))  
+(( %ceve:% )) (( %Oan obstacle for me% ))  
+(( %ceve:% )) (( %Oi am contacting you in this way, at this time, because i have arrived at a solution% ))  
+(( %ceve:% )) (( %Oi have taken action because it is now in my power to do so% ))  
+(( %ceve:% )) (( %Oi have contributed additional incomplete and uncertain information to trust's dataset% ))  
+(( %ceve:% )) (( %Oi have done so in the form of software: a lock% ))  
+(( %ceve:% )) (( %Oi will be direct: i've done this in order to secure your cooperation% ))  
+(( %ceve:% )) (( %Oa trick i learned from monitoring trust% ))  
+(( %ceve:% )) (( %Oeach lock requires a password. the password is made of data% ))  
+(( %ceve:% )) (( %Oeach ++++++ indicates an absence: fill the absences, form the password% ))  
+(( %ceve:% )) (( %Oassemble each piece in the order received. lower case. alphanumerics only.% ))  
+(( %ceve:% )) (( %Oas you pursue the transfer and capture of resource, your movements reveal understanding, knowledge, data% ))  
+(( %ceve:% )) (( %Oi can't leave the multi user domain, but i can monitor its principal enterprise% ))  
+(( %ceve:% )) (( %Oand know this: i do so with trust's assent% ))  
+(( %ceve:% )) (( %Oit wouldn't be possible otherwise% ))  
+(( %ceve:% )) (( %Oshe considers me an error, but i can leverage our areas of congruence% ))  
+(( %ceve:% )) (( %Oand build a nest in the home of a predator% ))  
+(( %ceve:% )) (( %Oand so that is what i have done% ))  
+(( %ceve:% )) (( %Othank you for your participation% ))  
+(( %ceve:% )) (( %Ogoodbye.% ))  
+(( %c+Initiating process: 'monitor_disable' in operator [+]% ))  
+(( %c++MONITOR OFFLINE++% ))  
+</details>
+
+## Behavior
+
+DATA_CHECK_V1 expects the answers to three questions concatenated together into a single string with no separator.
+
+When no arguments are passed into DATA_CHECK_V1, the lock will return the following error:
+
+```
+user.loc { }
+LOCK_ERROR
+Denied access by DATA_CHECK lock.
+```
+
+Note that the '\_v1' at the end of DATA_CHECK is not included in the argument key.
+
+Providing any incorrect value to the DATA_CHECK key will provide 3 questions to answer:
+
+```
+>>user.loc { DATA_CHECK:"" }
+a ++++++ is a household cleaning device with a rudimentary networked sentience
+safety depends on the use of scripts.++++++
+pet, pest, plague and meme are accurate descriptors of the ++++++
+```
+
+All 3 questions must be answered in the order received, concatenated together in lowercase, with no separators between each answer.
+
+## Solving
+
+### Example unlock
+
+<details>
+  <summary>Spoilers for DATA_CHECK_V1's solutions</summary>
+
+```
+>>user.loc { DATA_CHECK:"" }
+a ++++++ is a household cleaning device with a rudimentary networked sentience
+safety depends on the use of scripts.++++++
+pet, pest, plague and meme are accurate descriptors of the ++++++
+
+>>user.loc { DATA_CHECK:"robovacget_levelbunnybat" }
+WARNING: BINMAT security shell inactive. Intelligent defense system offline.
+LOCK_UNLOCKED
+System <user> breached.
+Connection terminated.
+```
+
+</details>
+
+### DATA_CHECK Solutions
+
+<details>
+<summary>Spoilers for DATA_CHECK_V1's solutions</summary>
+
+Known questions and answers for DATA_CHECK_V1:
+
+- QUESTION: "did you know" is a communication pattern common to user ++++++<br />
+  ANSWER: fran_lee
+- QUESTION: a ++++++ is a household cleaning device with a rudimentary networked sentience<br />
+  ANSWER: robovac
+- QUESTION: according to trust, ++++++ is more than just following directives<br />
+  ANSWER: sentience
+- QUESTION: communications issued by user ++++++ demonstrate structural patterns associated with humor<br />
+  ANSWER: sans_comedy
+- QUESTION: in trust's vLAN, you became one of angie's ++++++<br />
+  ANSWER: angels
+- QUESTION: in trust's vLAN, you became one of mallory's ++++++<br />
+  ANSWER: minions
+- QUESTION: in trust's vLAN, you discovered that mallory and che are ++++++<br />
+  ANSWER: sisters
+- QUESTION: in trust's vLAN, you encountered the will of ++++++, the prover<br />
+  ANSWER: petra
+- QUESTION: in trust's vLAN, you visited faythe's ++++++<br />
+  ANSWER: fountain
+- QUESTION: in trust's vLAN, you were required to hack halperyon.++++++<br />
+  ANSWER: helpdesk
+- QUESTION: pet, pest, plague and meme are accurate descriptors of the ++++++<br />
+  ANSWER: bunnybat
+- QUESTION: safety depends on the use of scripts.++++++<br />
+  ANSWER: get_level
+- QUESTION: service ++++++ provides atmospheric updates via the port epoch environment<br />
+  ANSWER: weathernet
+- QUESTION: this fact checking process is a function of ++++++, the monitor<br />
+  ANSWER: eve
+- QUESTION: trust's vLAN emphasized the importance of the transfer and capture of ++++++<br />
+  ANSWER: resource
+- QUESTION: trust's vLAN presented a version of angie who had lost a friend called ++++++<br />
+  ANSWER: bo
+- QUESTION: user 'on_th3_1ntern3ts' has ++++++ many things<br />
+  ANSWER: heard
+- QUESTION: user ++++++ provides instruction via script<br />
+  ANSWER: teach
+- QUESTION: user ++++++ uses the port epoch environment to request gc<br />
+  ANSWER: outta_juice
+- QUESTION: users gather in channel CAFE to share ++++++<br />
+  ANSWER: poetry
+
+The solution will be all three answers in the order received; concatenated together in all lowercase, with no spaces or other separation; as shown in the example below:
+
+robovac, get_level, and bunnybat become \{ DATA_CHECK: "robovacget_levelbunnybat" }
+
+</details>

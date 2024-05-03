@@ -78,8 +78,61 @@ const config = {
       },
     },
     navbar: {
-      title: "hackmud spoilers Wiki",
-      items: [],
+      title: "hackmud spoiler Wiki",
+      items: [
+        {
+          type: "dropdown",
+          label: "Upgrades",
+          items: [
+            {
+              type: "docSidebar",
+              sidebarId: "lockSidebar",
+            }
+          ],
+        },
+        {
+          type: "dropdown",
+          label: "Lore",
+          items: [
+            {
+              type: "docSidebar",
+              sidebarId: "characterSidebar",
+            },
+            {
+              type: "docSidebar",
+              sidebarId: "userSidebar",
+            },
+            {
+              type: "docSidebar",
+              sidebarId: "eventSidebar",
+            },
+            {
+              type: "docSidebar",
+              sidebarId: "mechanicSidebar",
+            },
+          ],
+        },
+        {
+          type: "dropdown",
+          label: "Scripting",
+          items: [
+            {
+              type: "docSidebar",
+              sidebarId: "trustScriptsSidebar",
+            },
+          ],
+        },
+        {
+          type: "dropdown",
+          label: "Guides",
+          items: [
+            {
+              type: "docSidebar",
+              sidebarId: "miscGuidesSidebar",
+            },
+          ],
+        },
+      ],
     },
     footer: {
       copyright:

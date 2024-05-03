@@ -7,16 +7,16 @@
 }
 
 html[data-theme="dark"] {
-  --ifm-color-primary: #7ab2f4;
-  --ifm-color-primary-dark: #589ef1;
-  --ifm-color-primary-darker: #4795f0;
-  --ifm-color-primary-darkest: #1b7bec;
-  --ifm-color-primary-light: #9cc6f7;
-  --ifm-color-primary-lighter: #adcff8;
-  --ifm-color-primary-lightest: #dfedfc;
-  --ifm-background-color: #101215;
+  --ifm-color-primary: #f4ec7a;
+  --ifm-color-primary-dark: #f1bb58;
+  --ifm-color-primary-darker: #f09347;
+  --ifm-color-primary-darkest: #ec681b;
+  --ifm-color-primary-light: #f7d39c;
+  --ifm-color-primary-lighter: #f8d8ad;
+  --ifm-color-primary-lightest: #fceedf;
+  --ifm-background-color: #151410;
 
-  --ifm-color-info-contrast-background: rgb(25 60 71 / 50%);
+  --ifm-color-info-contrast-background: rgba(15, 7, 6, 0.5);
   --ifm-color-warning-contrast-background: rgb(77 56 0 / 50%);
   --ifm-color-danger-contrast-background: rgb(75 17 19 / 50%);
 
@@ -58,8 +58,8 @@ a.wikilink-new {
   background-image: repeating-linear-gradient(
     #0e0e0e,
     #0e0e0e 2px,
-    #101215 2px,
-    #101215 4px
+    #151210 2px,
+    #151310 4px
   );
   background-size: 100% 4px;
 }
