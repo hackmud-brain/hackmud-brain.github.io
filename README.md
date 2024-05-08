@@ -26,15 +26,11 @@
 
 1. Only create articles with the intention to provide a majority of the info. Empty articles or placeholder articles should not be created.
 1. All articles should pertain to hackmud, its lore, or its mechanics.
-1. Articles should not be created pertaining to the developers, players, or any other real life person.
-1. All articles relating to mechanics should contain content that is currently in game. Articles should not contain historic or removed info.
 1. Any game text content/output should be presented as it appears in game and not be corrected for formatting, spelling, or grammar. If information does not pertain to the article, omitting the lines and replacing them with "\<lines omitted\>" is acceptable.
 1. When in doubt, infer appropriate styling/content from previously written articles. If there are still questions regarding styling or content, list these in a separate issue so that they can be addressed for content guide improvements.
 
 ### Community
 
-1. Articles detailing or describing user scripts are not allowed.
-1. Articles about third party programs are not allowed. Examples include Autohotkey, Sandboxie, JS libraries, etc.
 1. Articles that violate the hackmud discord rules or volunteer code of conduct are not permitted.
 
 ### Article Titles
@@ -47,9 +43,6 @@
 1. All articles should be written in third person with no referential nouns (e.g. you, your). An exception to this is for Tutorials, FAQs, and Writeups.
    - Bad Example: `ez_21 is one of the first upgrades you could find.`
    - Good Example: `ez_21 is a tier 1 lock. It is commonly found in t1 NPCs.`
-1. Tutorial info should only be included in dedicated Tutorials, FAQs, and Writeups.
-1. Articles should only contain information pertaining to content currently implemented in hackmud. Historic or planned content should not be added.
-   - Bad Example: `Previously, in sys.access_log, there would be NPCs that connect to users. These were called Account NPCs.`
 1. When including example code or scripts, they should be added in the markdown inside of a code block with the proper syntax highlighting.
 
 ```JS
